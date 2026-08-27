@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ▼▼▼ CHANGE your name in the browser-tab title below ▼▼▼ -->
+  <title>Katie Wang, Portfolio</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --text: #e6edf3;
+      --muted: #9198a1;
+      --accent: #a371f7;
+      --border: #30363d;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+    header {
+      padding: 80px 0 48px;
+      border-bottom: 1px solid var(--border);
+    }
+    header .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--border);
+      margin-bottom: 24px;
+      display: block;
+    }
+    header h1 { font-size: 2.6rem; letter-spacing: -0.02em; }
+    header .tagline { color: var(--muted); font-size: 1.2rem; margin-top: 8px; }
+    .links { margin-top: 20px; display: flex; gap: 16px; flex-wrap: wrap; }
+    .links a {
+      border: 1px solid var(--border);
+      padding: 8px 16px;
+      border-radius: 8px;
+      color: var(--text);
+    }
+    .links a:hover { border-color: var(--accent); text-decoration: none; }
+
+    section { padding: 48px 0; border-bottom: 1px solid var(--border); }
+    section h2 { font-size: 1.4rem; margin-bottom: 20px; }
+
+    .project {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+    }
+    .project h3 { font-size: 1.15rem; margin-bottom: 6px; }
+    .project p { color: var(--muted); }
+    .project ul { color: var(--muted); margin: 10px 0 0 18px; }
+    .project ul li { margin-bottom: 4px; }
+    .project .stack { margin-top: 10px; font-size: 0.85rem; color: var(--accent); }
+
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skills span {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    footer { padding: 40px 0 80px; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- ============ HEADER / INTRO ============ -->
+    <header>
+      <img class="avatar" src="photo.jpg" alt="Katie Wang" />
+      <h1>Katie Wang</h1>
+      <p class="tagline">Developer Marketing &amp; Content Strategist</p>
+      <div class="links">
+        <a href="mailto:wangkatie177@gmail.com">Email</a>
+        <a href="https://github.com/katiewwng" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/katieyuyiwang" target="_blank">LinkedIn</a>
+        <a href="resume.pdf" target="_blank">Résumé</a>
+      </div>
+    </header>
+
+    <!-- ============ ABOUT ============ -->
+    <section>
+      <h2>About</h2>
+      <p>
+        Hi, I'm Katie! I'm a Business Economics student at UC Irvine with a minor
+        in Digital Information Systems, and a growth marketer who loves turning
+        data and creativity into content that actually moves the needle. I've
+        ranked #1 in company-wide engagement at GitHub, driven millions of
+        impressions and views, and helped brands generate real revenue. As an
+        energetic ENFP, I'm all about storytelling, community, and making tech
+        feel human, and I'm always excited for the next marketing challenge.
+      </p>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section>
+      <h2>Experience</h2>
+
+      <div class="project">
+        <h3>Marketing Intern · Human Signal</h3>
+        <p>Incoming Fall 2026, joining the team to support marketing and content initiatives.</p>
+        <div class="stack">Marketing · Content</div>
+      </div>
+
+      <div class="project">
+        <h3>Integrated Growth Marketing Intern · GitHub</h3>
+        <ul>
+          <li>Ranked <strong>#1 in company-wide engagement</strong> creating content across Instagram, X, LinkedIn, TikTok, and Bluesky.</li>
+          <li>Synthesized <strong>8M+ impressions</strong> across 5 platforms into an executive report that shaped content direction.</li>
+          <li>Delivered a 22-slide competitive brand analysis that shaped GitHub's organic social strategy.</li>
+        </ul>
+        <div class="stack">Social Strategy · Analytics · Content · Jun 2025 – Present</div>
+      </div>
+
+      <div class="project">
+        <h3>Marketing Intern · Stride</h3>
+        <ul>
+          <li>Designed <strong>50+ branded assets</strong>, boosting brand consistency across national education campaigns.</li>
+          <li>Led meetings with 15 stakeholders, cutting revision cycles by <strong>2 weeks</strong>.</li>
+          <li>Audited 120 campaigns and pages to build a scalable content framework.</li>
+        </ul>
+        <div class="stack">Content · Branding · Campaigns · Sep 2025 – Apr 2026</div>
+      </div>
+    </section>
+
+    <!-- ============ LEADERSHIP ============ -->
+    <section>
+      <h2>Leadership</h2>
+      <div class="project">
+        <h3>Executive Vice President · Alpha Kappa Psi</h3>
+        <ul>
+          <li>Administered <strong>$20K+</strong> in chapter transactions with 3 quarterly audits and zero discrepancies.</li>
+          <li>Launched 3 new retreats and events with <strong>90%+ turnout</strong>, strengthening chapter community.</li>
+          <li>Aligned initiatives across 6 executive leaders, improving chapter-wide communication.</li>
+        </ul>
+        <div class="stack">Operations · Events · Leadership · Jun 2025 – Jun 2026</div>
+      </div>
+    </section>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section>
+      <h2>Education</h2>
+      <div class="project">
+        <h3>University of California, Irvine</h3>
+        <p>B.A. in Business Economics · Minor in Digital Information Systems · Expected March 2027</p>
+        <div class="stack">Marketing · Data · Digital Systems</div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>Social Media Management</span>
+        <span>Content Strategy</span>
+        <span>Short-form Video</span>
+        <span>SEO</span>
+        <span>SEMrush</span>
+        <span>Sprout Social</span>
+        <span>HubSpot</span>
+        <span>Google Analytics &amp; Ads</span>
+        <span>LinkedIn Analytics</span>
+        <span>Canva</span>
+        <span>Figma</span>
+        <span>Adobe Photoshop</span>
+        <span>Adobe Premiere Pro</span>
+      </div>
+    </section>
+
+    <!-- ============ LANGUAGES ============ -->
+    <section>
+      <h2>Languages</h2>
+      <div class="skills">
+        <span>English</span>
+        <span>Mandarin</span>
+        <span>Spanish</span>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+      <p>© 2026 Katie Wang · Built with GitHub Pages</p>
+    </footer>
+
+  </div>
+</body>
+</html>
