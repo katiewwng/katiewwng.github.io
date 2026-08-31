@@ -65,6 +65,45 @@
     .project ul li { margin-bottom: 4px; }
     .project .stack { margin-top: 10px; font-size: 0.85rem; color: var(--accent); }
 
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .metric {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 12px;
+      text-align: center;
+    }
+    .metric .num { font-size: 1.6rem; font-weight: 700; color: var(--accent); }
+    .metric .label { font-size: 0.8rem; color: var(--muted); margin-top: 4px; }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .work-card {
+      display: block;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      color: var(--text);
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .work-card:hover { transform: translateY(-3px); border-color: var(--accent); text-decoration: none; }
+    .work-card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+    .work-card p { color: var(--muted); font-size: 0.92rem; }
+
+    @media (max-width: 560px) {
+      .metrics { grid-template-columns: repeat(2, 1fr); }
+      .work-grid { grid-template-columns: 1fr; }
+    }
+
     .skills { display: flex; flex-wrap: wrap; gap: 10px; }
     .skills span {
       background: var(--card);
@@ -89,7 +128,6 @@
         <a href="mailto:wangkatie177@gmail.com">Email</a>
         <a href="https://github.com/katiewwng" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/katieyuyiwang" target="_blank">LinkedIn</a>
-        <a href="resume.pdf" target="_blank">Résumé</a>
       </div>
     </header>
 
@@ -107,6 +145,29 @@
       </p>
     </section>
 
+    <!-- ============ METRICS ============ -->
+    <section>
+      <h2>By the Numbers</h2>
+      <div class="metrics">
+        <div class="metric">
+          <div class="num">8M+</div>
+          <div class="label">Impressions across 5 platforms</div>
+        </div>
+        <div class="metric">
+          <div class="num">#1</div>
+          <div class="label">Company-wide engagement at GitHub</div>
+        </div>
+        <div class="metric">
+          <div class="num">$95K</div>
+          <div class="label">In brand sales driven</div>
+        </div>
+        <div class="metric">
+          <div class="num">5M+</div>
+          <div class="label">Views on short-form content</div>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ PROJECTS ============ -->
     <section>
       <h2>Experience</h2>
@@ -119,22 +180,35 @@
 
       <div class="project">
         <h3>Integrated Growth Marketing Intern · GitHub</h3>
-        <ul>
-          <li>Ranked <strong>#1 in company-wide engagement</strong> creating content across Instagram, X, LinkedIn, TikTok, and Bluesky.</li>
-          <li>Synthesized <strong>8M+ impressions</strong> across 5 platforms into an executive report that shaped content direction.</li>
-          <li>Delivered a 22-slide competitive brand analysis that shaped GitHub's organic social strategy.</li>
-        </ul>
         <div class="stack">Social Strategy · Analytics · Content · Jun 2025 – Present</div>
       </div>
 
       <div class="project">
         <h3>Marketing Intern · Stride</h3>
-        <ul>
-          <li>Designed <strong>50+ branded assets</strong>, boosting brand consistency across national education campaigns.</li>
-          <li>Led meetings with 15 stakeholders, cutting revision cycles by <strong>2 weeks</strong>.</li>
-          <li>Audited 120 campaigns and pages to build a scalable content framework.</li>
-        </ul>
         <div class="stack">Content · Branding · Campaigns · Sep 2025 – Apr 2026</div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED WORK ============ -->
+    <section>
+      <h2>Featured Work</h2>
+      <div class="work-grid">
+        <a class="work-card" href="#" target="_blank">
+          <h3>GitHub Social Content ↗</h3>
+          <p>Add a link to a favorite Instagram, TikTok, or LinkedIn post you created. Replace the # with the URL.</p>
+        </a>
+        <a class="work-card" href="#" target="_blank">
+          <h3>Competitive Brand Analysis ↗</h3>
+          <p>Link your 22-slide deck or a summary of the organic social strategy work.</p>
+        </a>
+        <a class="work-card" href="#" target="_blank">
+          <h3>Viral Short-Form Campaign ↗</h3>
+          <p>Showcase a standout TikTok/Reel that drove views. Add the link here.</p>
+        </a>
+        <a class="work-card" href="#" target="_blank">
+          <h3>More Coming Soon ↗</h3>
+          <p>Add another campaign, project, or content piece you're proud of.</p>
+        </a>
       </div>
     </section>
 
@@ -143,11 +217,6 @@
       <h2>Leadership</h2>
       <div class="project">
         <h3>Executive Vice President · Alpha Kappa Psi</h3>
-        <ul>
-          <li>Administered <strong>$20K+</strong> in chapter transactions with 3 quarterly audits and zero discrepancies.</li>
-          <li>Launched 3 new retreats and events with <strong>90%+ turnout</strong>, strengthening chapter community.</li>
-          <li>Aligned initiatives across 6 executive leaders, improving chapter-wide communication.</li>
-        </ul>
         <div class="stack">Operations · Events · Leadership · Jun 2025 – Jun 2026</div>
       </div>
     </section>
