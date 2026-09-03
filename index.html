@@ -141,10 +141,11 @@
     @media (max-width: 560px) { .panel { padding: 24px 20px 28px; } }
 
     .sec-label {
-      font-family: var(--font-pixel); font-size: 0.6rem; letter-spacing: 0.04em;
+      font-family: var(--font-pixel); font-size: 0.72rem; letter-spacing: 0.04em;
       color: var(--pink); margin-bottom: 16px;
+      display: inline-flex; align-items: center; gap: 0.5em;
     }
-    .sec-label::before { content: "\2605"; color: var(--gold); margin-right: 0.5em; }
+    .sec-label::before { content: "\2605"; color: var(--gold); }
     .sec-title {
       font-family: var(--font-pixel); font-size: clamp(1.1rem, 3vw, 1.8rem);
       line-height: 1.35; margin-bottom: 24px; color: var(--ink);
