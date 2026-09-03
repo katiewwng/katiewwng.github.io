@@ -502,6 +502,29 @@
       }, { threshold: 0.25 });
       obs.observe(section);
     })();
+    (function () {
+      function scrollToId(id) {
+        var target = document.getElementById(id);
+        if (!target) return false;
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        return true;
+      }
+      document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+          var id = a.getAttribute('href').slice(1);
+          if (!id) return;
+          if (scrollToId(id)) {
+            e.preventDefault();
+            if (history.replaceState) history.replaceState(null, '', location.pathname + location.search);
+          }
+        });
+      });
+      if (location.hash) {
+        var id = location.hash.slice(1);
+        if (history.replaceState) history.replaceState(null, '', location.pathname + location.search);
+        window.addEventListener('load', function () { setTimeout(function () { scrollToId(id); }, 60); });
+      }
+    })();
   </script>
 </body>
 </html>
