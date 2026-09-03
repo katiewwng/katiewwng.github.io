@@ -226,9 +226,9 @@
       animation: pxsway 2.4s ease-in-out infinite;
     }
     .pixel-flower.pf1 { width: 70px; left: 11%; bottom: 92px; }
-    .pixel-flower.pf2 { width: 48px; left: 26%; bottom: 96px; animation-duration: 3s; animation-delay: -0.8s; }
+    .pixel-flower.pf2 { width: 48px; left: calc(11% + 86px); bottom: 96px; animation-duration: 3s; animation-delay: -0.8s; }
     @keyframes pxsway { 0%,100% { transform: rotate(-8deg); } 50% { transform: rotate(8deg); } }
-    @media (max-width: 560px) { .pixel-flower.pf1 { left: 8%; } .pixel-flower.pf2 { left: 28%; } }
+    @media (max-width: 560px) { .pixel-flower.pf1 { left: 8%; } .pixel-flower.pf2 { left: calc(8% + 78px); } }
     .ground .grass {
       height: 30px; background: var(--grass-1);
       border-top: 5px solid #2f8f22;
@@ -412,7 +412,6 @@
     <div class="wrap">
       <div class="panel contact-cta">
         <h2>Let's Create Something Great</h2>
-        <p>Always open to marketing opportunities, collaborations, and good conversations.</p>
         <div class="cta-row" style="justify-content: center;">
           <a class="btn btn-primary" href="mailto:wangkatie177@gmail.com">Email Me</a>
           <a class="btn btn-ghost" href="https://www.linkedin.com/in/katieyuyiwang" target="_blank">LinkedIn</a>
@@ -431,7 +430,7 @@
   </div>
 
   <footer>
-    <p>© 2026 KATIE WANG · BUILT WITH GITHUB PAGES</p>
+    <p>© 2026 KATIE WANG · PLAYER 1</p>
   </footer>
 
   <script>
