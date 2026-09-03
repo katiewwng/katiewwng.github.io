@@ -126,6 +126,11 @@
       background: var(--gold); border: 3px solid var(--ink);
       padding: 12px 16px; box-shadow: 4px 4px 0 rgba(36,21,70,0.4);
     }
+    @media (max-width: 560px) {
+      .hero .eyebrow { text-align: center; }
+      .hero .eyebrow .eyebrow-sep { display: none; }
+      .hero .eyebrow .eyebrow-loc { display: block; margin-top: 6px; }
+    }
     .cta-row { margin-top: 40px; display: flex; gap: 18px; flex-wrap: wrap; justify-content: center; }
     .btn {
       display: inline-block; font-family: var(--font-pixel); font-size: 0.68rem;
@@ -300,7 +305,7 @@
     <div class="wrap">
       <img class="avatar" src="photo.jpg" alt="Katie Wang" />
       <div class="typed-line"><span id="typed"></span><span class="cursor"></span></div>
-      <div class="eyebrow">SOCIAL MEDIA &amp; GROWTH MARKETING · UC IRVINE</div>
+      <div class="eyebrow">SOCIAL MEDIA &amp; GROWTH MARKETING<span class="eyebrow-sep"> · </span><span class="eyebrow-loc">UC IRVINE</span></div>
       <div class="cta-row">
         <a class="btn btn-primary" href="#work">View My Work</a>
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/katieyuyiwang" target="_blank">Let's Connect</a>
