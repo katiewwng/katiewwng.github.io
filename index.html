@@ -201,7 +201,7 @@
     .item .date { color: var(--teal); font-family: var(--font-pixel); font-size: 0.72rem; white-space: nowrap; line-height: 1.6; }
     .item .date.date-stack span { display: block; }
     .item .date.date-stack span + span { margin-top: 8px; }
-    @media (max-width: 560px) { .item { flex-direction: column; } .item .date { white-space: normal; } }
+    @media (max-width: 560px) { .item { flex-direction: column; align-items: flex-start; gap: 6px; } .item .date { white-space: normal; } }
 
     /* ===== work cards ===== */
     .work-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
