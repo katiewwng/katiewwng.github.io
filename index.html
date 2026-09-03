@@ -145,7 +145,11 @@
       color: var(--pink); margin-bottom: 16px;
       display: inline-flex; align-items: center; gap: 0.5em;
     }
-    .sec-label::before { content: "\2605"; color: var(--gold); }
+    .sec-label::before {
+      content: ""; width: 0.85em; height: 0.85em; flex: none;
+      background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%207%207%22%20shape-rendering%3D%22crispEdges%22%20fill%3D%22%23ffd23f%22%3E%3Crect%20x%3D%223%22%20y%3D%220%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%223%22%20y%3D%221%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%220%22%20y%3D%222%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%221%22%20y%3D%222%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%223%22%20y%3D%222%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%224%22%20y%3D%222%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%225%22%20y%3D%222%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%226%22%20y%3D%222%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%221%22%20y%3D%223%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%223%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%223%22%20y%3D%223%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%224%22%20y%3D%223%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%225%22%20y%3D%223%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%224%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%223%22%20y%3D%224%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%224%22%20y%3D%224%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%221%22%20y%3D%225%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%225%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%224%22%20y%3D%225%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%225%22%20y%3D%225%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%221%22%20y%3D%226%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%225%22%20y%3D%226%22%20width%3D%221%22%20height%3D%221%22%2F%3E%3C%2Fsvg%3E") center / contain no-repeat;
+      image-rendering: pixelated;
+    }
     .sec-title {
       font-family: var(--font-pixel); font-size: clamp(1.1rem, 3vw, 1.8rem);
       line-height: 1.35; margin-bottom: 24px; color: var(--ink);
@@ -296,11 +300,10 @@
         <div class="sec-label" data-num="01">About</div>
         <div class="about-grid">
           <p>
-            I'm a social media &amp; growth marketer who loves turning data and creativity
-            into content that actually moves the needle. I've ranked #1 in company-wide
-            engagement at GitHub and driven millions of impressions and views across
-            platforms. As an energetic ENFP, I'm all about storytelling, community, and
-            making tech feel human, and I'm always excited for the next marketing challenge.
+            I'm a social media and growth marketer who turns data and creativity into
+            content that moves the needle. At GitHub I ranked #1 in company-wide engagement
+            and drove millions of impressions across platforms. As an energetic ENFP, I love
+            storytelling, community, and making tech feel human.
           </p>
         </div>
       </div>
