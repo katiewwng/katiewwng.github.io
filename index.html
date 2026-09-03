@@ -144,7 +144,7 @@
       font-family: var(--font-pixel); font-size: 0.6rem; letter-spacing: 0.04em;
       color: var(--pink); margin-bottom: 16px;
     }
-    .sec-label::before { content: "\2605 "; color: var(--gold); }
+    .sec-label::before { content: "\2605"; color: var(--gold); margin-right: 0.5em; }
     .sec-title {
       font-family: var(--font-pixel); font-size: clamp(1.1rem, 3vw, 1.8rem);
       line-height: 1.35; margin-bottom: 24px; color: var(--ink);
@@ -164,6 +164,21 @@
       text-shadow: 2px 2px 0 var(--pink);
     }
     .metric .label { color: var(--ink-soft); font-size: 1.25rem; margin-top: 12px; line-height: 1.3; }
+    .metric .coin {
+      width: 36px; height: 36px; image-rendering: pixelated; display: block;
+      margin: 0 auto 14px; transform-origin: center center;
+      filter: drop-shadow(2px 3px 0 rgba(36,21,70,0.22));
+      animation: coinflip 1.9s ease-in-out infinite;
+    }
+    .metric:nth-child(2) .coin { animation-delay: -0.5s; }
+    .metric:nth-child(3) .coin { animation-delay: -1s; }
+    @keyframes coinflip {
+      0%   { transform: scaleX(1); }
+      25%  { transform: scaleX(0.12); }
+      50%  { transform: scaleX(-1); }
+      75%  { transform: scaleX(0.12); }
+      100% { transform: scaleX(1); }
+    }
 
     /* ===== experience / education rows ===== */
     .item { display: flex; justify-content: space-between; gap: 18px; padding: 20px 2px; border-bottom: 3px dashed rgba(36,21,70,0.25); }
@@ -211,9 +226,9 @@
       animation: pxsway 2.4s ease-in-out infinite;
     }
     .pixel-flower.pf1 { width: 70px; left: 11%; bottom: 92px; }
-    .pixel-flower.pf2 { width: 48px; left: 19%; bottom: 96px; animation-duration: 3s; animation-delay: -0.8s; }
+    .pixel-flower.pf2 { width: 48px; left: 26%; bottom: 96px; animation-duration: 3s; animation-delay: -0.8s; }
     @keyframes pxsway { 0%,100% { transform: rotate(-8deg); } 50% { transform: rotate(8deg); } }
-    @media (max-width: 560px) { .pixel-flower.pf1 { left: 8%; } .pixel-flower.pf2 { left: 20%; } }
+    @media (max-width: 560px) { .pixel-flower.pf1 { left: 8%; } .pixel-flower.pf2 { left: 28%; } }
     .ground .grass {
       height: 30px; background: var(--grass-1);
       border-top: 5px solid #2f8f22;
@@ -315,15 +330,19 @@
         <div class="sec-label" data-num="03">Impact</div>
         <h2 class="sec-title">By the Numbers</h2>
         <div class="metrics">
+          <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="pixcoin" viewBox="0 0 8 8"><rect x="2" y="0" width="1" height="1" fill="#b9791f"/><rect x="3" y="0" width="1" height="1" fill="#b9791f"/><rect x="4" y="0" width="1" height="1" fill="#b9791f"/><rect x="5" y="0" width="1" height="1" fill="#b9791f"/><rect x="1" y="1" width="1" height="1" fill="#b9791f"/><rect x="2" y="1" width="1" height="1" fill="#fff1a8"/><rect x="3" y="1" width="1" height="1" fill="#ffd23f"/><rect x="4" y="1" width="1" height="1" fill="#ffd23f"/><rect x="5" y="1" width="1" height="1" fill="#ffd23f"/><rect x="6" y="1" width="1" height="1" fill="#b9791f"/><rect x="0" y="2" width="1" height="1" fill="#b9791f"/><rect x="1" y="2" width="1" height="1" fill="#fff1a8"/><rect x="2" y="2" width="1" height="1" fill="#ffd23f"/><rect x="3" y="2" width="1" height="1" fill="#e0a92e"/><rect x="4" y="2" width="1" height="1" fill="#e0a92e"/><rect x="5" y="2" width="1" height="1" fill="#ffd23f"/><rect x="6" y="2" width="1" height="1" fill="#e0a92e"/><rect x="7" y="2" width="1" height="1" fill="#b9791f"/><rect x="0" y="3" width="1" height="1" fill="#b9791f"/><rect x="1" y="3" width="1" height="1" fill="#fff1a8"/><rect x="2" y="3" width="1" height="1" fill="#ffd23f"/><rect x="3" y="3" width="1" height="1" fill="#e0a92e"/><rect x="4" y="3" width="1" height="1" fill="#e0a92e"/><rect x="5" y="3" width="1" height="1" fill="#ffd23f"/><rect x="6" y="3" width="1" height="1" fill="#e0a92e"/><rect x="7" y="3" width="1" height="1" fill="#b9791f"/><rect x="0" y="4" width="1" height="1" fill="#b9791f"/><rect x="1" y="4" width="1" height="1" fill="#fff1a8"/><rect x="2" y="4" width="1" height="1" fill="#ffd23f"/><rect x="3" y="4" width="1" height="1" fill="#e0a92e"/><rect x="4" y="4" width="1" height="1" fill="#e0a92e"/><rect x="5" y="4" width="1" height="1" fill="#ffd23f"/><rect x="6" y="4" width="1" height="1" fill="#e0a92e"/><rect x="7" y="4" width="1" height="1" fill="#b9791f"/><rect x="0" y="5" width="1" height="1" fill="#b9791f"/><rect x="1" y="5" width="1" height="1" fill="#fff1a8"/><rect x="2" y="5" width="1" height="1" fill="#ffd23f"/><rect x="3" y="5" width="1" height="1" fill="#e0a92e"/><rect x="4" y="5" width="1" height="1" fill="#e0a92e"/><rect x="5" y="5" width="1" height="1" fill="#ffd23f"/><rect x="6" y="5" width="1" height="1" fill="#e0a92e"/><rect x="7" y="5" width="1" height="1" fill="#b9791f"/><rect x="1" y="6" width="1" height="1" fill="#b9791f"/><rect x="2" y="6" width="1" height="1" fill="#ffd23f"/><rect x="3" y="6" width="1" height="1" fill="#ffd23f"/><rect x="4" y="6" width="1" height="1" fill="#ffd23f"/><rect x="5" y="6" width="1" height="1" fill="#ffd23f"/><rect x="6" y="6" width="1" height="1" fill="#b9791f"/><rect x="2" y="7" width="1" height="1" fill="#b9791f"/><rect x="3" y="7" width="1" height="1" fill="#b9791f"/><rect x="4" y="7" width="1" height="1" fill="#b9791f"/><rect x="5" y="7" width="1" height="1" fill="#b9791f"/></symbol></svg>
           <div class="metric">
+            <svg class="coin" aria-hidden="true"><use href="#pixcoin"/></svg>
             <div class="num">8M+</div>
             <div class="label">Impressions across 5 platforms</div>
           </div>
           <div class="metric">
+            <svg class="coin" aria-hidden="true"><use href="#pixcoin"/></svg>
             <div class="num">#1</div>
             <div class="label">Company-wide engagement at GitHub</div>
           </div>
           <div class="metric">
+            <svg class="coin" aria-hidden="true"><use href="#pixcoin"/></svg>
             <div class="num">5M+</div>
             <div class="label">Views on short-form content</div>
           </div>
