@@ -209,8 +209,8 @@
     @media (max-width: 560px) { .item { flex-direction: column; align-items: flex-start; gap: 6px; } .item .date { white-space: normal; } }
 
     /* ===== work cards ===== */
-    .work-grid { display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 4px 6px 18px; scrollbar-width: thin; }
-    .work-grid .work-card { flex: 0 0 272px; scroll-snap-align: start; }
+    .work-grid { display: flex; gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 4px 6px 18px; scrollbar-width: thin; }
+    .work-grid .work-card { flex: 0 0 320px; scroll-snap-align: start; }
     .work-card {
       display: block; background: #fff; border: 4px solid var(--ink); color: var(--ink);
       box-shadow: 6px 6px 0 rgba(36,21,70,0.3);
@@ -220,12 +220,12 @@
       display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: top center;
       background: #eee; border-bottom: 4px solid var(--ink);
     }
-    .work-card .card-body { padding: 14px 15px 16px; }
+    .work-card .card-body { padding: 18px 18px 20px; }
     .work-card:hover { transform: translate(3px,3px); box-shadow: 3px 3px 0 rgba(36,21,70,0.3); }
-    .work-card .platform { font-family: var(--font-pixel); font-size: 0.46rem; color: var(--teal); margin-bottom: 9px; line-height: 1.6; }
-    .work-card h3 { font-family: var(--font-head); font-size: 1.25rem; font-weight: 600; margin-bottom: 5px; color: var(--ink); }
-    .work-card p { color: var(--ink-soft); font-size: 1.1rem; line-height: 1.32; }
-    .work-card .meta { display: flex; justify-content: flex-end; margin-top: 11px; font-family: var(--font-pixel); font-size: 0.48rem; color: var(--purple); }
+    .work-card .platform { font-family: var(--font-pixel); font-size: 0.5rem; color: var(--teal); margin-bottom: 12px; line-height: 1.6; }
+    .work-card h3 { font-family: var(--font-head); font-size: 1.45rem; font-weight: 600; margin-bottom: 6px; color: var(--ink); }
+    .work-card p { color: var(--ink-soft); font-size: 1.25rem; line-height: 1.35; }
+    .work-card .meta { display: flex; justify-content: flex-end; margin-top: 14px; font-family: var(--font-pixel); font-size: 0.52rem; color: var(--purple); }
 
     @media (max-width: 560px) { .work-grid .work-card { flex-basis: 80%; } .metrics { grid-template-columns: 1fr; } }
 
@@ -414,7 +414,7 @@
             <div class="card-body">
               <div class="platform">Instagram · GitHub</div>
               <h3>"Comment Your Emoji"</h3>
-              <p>An interactive post that invited the community to comment their emoji. It sparked hundreds of likes and a lively comment section.</p>
+              <p>An interactive post inviting the community to comment their emoji. Hundreds joined in.</p>
               <div class="meta"><span class="view">View post ↗</span></div>
             </div>
           </a>
@@ -423,7 +423,7 @@
             <div class="card-body">
               <div class="platform">Instagram · GitHub</div>
               <h3>Apollo 11 Anniversary</h3>
-              <p>A storytelling post for the Moon landing anniversary. It spotlighted Margaret Hamilton and the Apollo 11 guidance code that still lives on GitHub.</p>
+              <p>A storytelling post for the Moon landing that spotlighted Margaret Hamilton and Apollo 11.</p>
               <div class="meta"><span class="view">View post ↗</span></div>
             </div>
           </a>
@@ -432,7 +432,7 @@
             <div class="card-body">
               <div class="platform">Instagram · GitHub</div>
               <h3>Contribution Graph Quiz</h3>
-              <p>A playful guessing game that challenged followers to spot the real contribution graph. The whole comment section jumped in to debate their pick.</p>
+              <p>A playful guessing game to spot the real contribution graph. The comments lit up.</p>
               <div class="meta"><span class="view">View post ↗</span></div>
             </div>
           </a>
@@ -441,7 +441,7 @@
             <div class="card-body">
               <div class="platform">LinkedIn · GitHub</div>
               <h3>Copilot for Issues</h3>
-              <p>A launch post that positions Copilot as a partner across the whole workflow. It turns a dense product update into clear, benefit-first copy.</p>
+              <p>A launch post framing Copilot as a partner across your whole workflow.</p>
               <div class="meta"><span class="view">View post ↗</span></div>
             </div>
           </a>
@@ -450,7 +450,7 @@
             <div class="card-body">
               <div class="platform">LinkedIn · GitHub</div>
               <h3>Copilot Spaces</h3>
-              <p>An announcement for Copilot Spaces that leads with the payoff for readers: answers grounded in your team's real context. It makes a technical feature feel genuinely useful.</p>
+              <p>An announcement for Copilot Spaces that leads with the real payoff for readers.</p>
               <div class="meta"><span class="view">View post ↗</span></div>
             </div>
           </a>
