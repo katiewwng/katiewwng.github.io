@@ -209,8 +209,8 @@
     @media (max-width: 560px) { .item { flex-direction: column; align-items: flex-start; gap: 6px; } .item .date { white-space: normal; } }
 
     /* ===== work cards ===== */
-    .work-grid { display: flex; gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 4px 6px 18px; scrollbar-width: thin; }
-    .work-grid .work-card { flex: 0 0 320px; scroll-snap-align: start; }
+    .work-grid { display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 4px 6px 18px; scrollbar-width: thin; }
+    .work-grid .work-card { flex: 0 0 272px; scroll-snap-align: start; }
     .work-card {
       display: block; background: #fff; border: 4px solid var(--ink); color: var(--ink);
       box-shadow: 6px 6px 0 rgba(36,21,70,0.3);
@@ -220,12 +220,12 @@
       display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: top center;
       background: #eee; border-bottom: 4px solid var(--ink);
     }
-    .work-card .card-body { padding: 18px 18px 20px; }
+    .work-card .card-body { padding: 14px 15px 16px; }
     .work-card:hover { transform: translate(3px,3px); box-shadow: 3px 3px 0 rgba(36,21,70,0.3); }
-    .work-card .platform { font-family: var(--font-pixel); font-size: 0.5rem; color: var(--teal); margin-bottom: 12px; line-height: 1.6; }
-    .work-card h3 { font-family: var(--font-head); font-size: 1.45rem; font-weight: 600; margin-bottom: 6px; color: var(--ink); }
-    .work-card p { color: var(--ink-soft); font-size: 1.25rem; line-height: 1.35; }
-    .work-card .meta { display: flex; justify-content: flex-end; margin-top: 14px; font-family: var(--font-pixel); font-size: 0.52rem; color: var(--purple); }
+    .work-card .platform { font-family: var(--font-pixel); font-size: 0.46rem; color: var(--teal); margin-bottom: 9px; line-height: 1.6; }
+    .work-card h3 { font-family: var(--font-head); font-size: 1.25rem; font-weight: 600; margin-bottom: 5px; color: var(--ink); }
+    .work-card p { color: var(--ink-soft); font-size: 1.1rem; line-height: 1.32; }
+    .work-card .meta { display: flex; justify-content: flex-end; margin-top: 11px; font-family: var(--font-pixel); font-size: 0.48rem; color: var(--purple); }
 
     @media (max-width: 560px) { .work-grid .work-card { flex-basis: 80%; } .metrics { grid-template-columns: 1fr; } }
 
